@@ -17,3 +17,8 @@ for name in data:
 
 response = requests.get("http://api.open-notify.org/astros.json")
 print(response.content.decode("utf-8"))
+
+response = requests.get("http://api.open-notify.org/astros.json")
+people = {response}
+for key, val in people.items():
+    print(key, "=>", val)

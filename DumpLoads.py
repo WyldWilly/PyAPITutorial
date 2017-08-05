@@ -28,3 +28,15 @@ fast_food_franchise = {
 # We can also dump a dictionary to a string and load it
 fast_food_franchise_string = json.dumps(fast_food_franchise)
 print(type(fast_food_franchise_string))
+print(fast_food_franchise_string)
+print(fast_food_franchise)
+print(best_food_chains_string)
+print(best_food_chains)
+for chain in best_food_chains:
+    print(chain)
+
+for fran in fast_food_franchise:
+    print(fran)
+    
+for key,val in fast_food_franchise.items():
+    print(key, "=>", val)
