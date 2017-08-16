@@ -20,6 +20,10 @@ print("2 -------")
 response = requests.get("http://api.open-notify.org/astros.json")
 print(response.content.decode("utf-8"))
 
+print("2 -------")
+for people in data['people']:
+    print(people['name']+ " " + people['craft'])
+
 #response = requests.get("http://api.open-notify.org/astros.json")
 #people = {response}
 #for key, val in people.items():
